@@ -13,33 +13,35 @@ body {
   border-radius: 10px;
 }
 
-div {
-  height: 750px;
-  width: 750px;
-  background-color: crimson;
-  margin: 25px auto;
-}
+/*
+  Form
+*/
 
 #new-book-form {
   display: flex;
   height: 100%;
   width: 100%;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .form-container {
+  height: 750px;
+  width: 750px;
+  background-color: crimson;
+  margin: 25px auto;
   display: none;
 }
 
 .form-input {
   border: 1px solid blue;
-  width: 50%;
+  width: 80%;
   padding: 20px;
 }
 
 .form-input input[type="text"], input[type="number"] {
   width: 80%;
-
 }
 
 .form-input input[type="submit"] {
@@ -50,4 +52,23 @@ div {
   padding: 10px 30px;
   border: 1px solid grey;
   border-radius: 10px;
+}
+
+/*
+  Table
+*/
+
+.table-container {
+  width: 750px;
+  background-color: seagreen;
+  margin: 25px auto;
+}
+
+.table-container table, th, td{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.table-container table {
+  width: 100%;
 }
